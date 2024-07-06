@@ -141,16 +141,17 @@
 
 
  .collection_title {
-    justify-content: center;
-    font-family: var(--first-ff);
-    line-height: 72px;
-    font-size: 150px;
-    background-image: linear-gradient(to right, #FF5F6D, #FFC371); /* Example gradient */
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+     justify-content: center;
+     font-family: var(--first-ff);
+     line-height: 72px;
+     font-size: 150px;
+     background-image: linear-gradient(to right, #FF5F6D, #FFC371);
+     /* Example gradient */
+     color: transparent;
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
 
  .btn {
      display: inline-block;
@@ -168,6 +169,41 @@
      transition: all 200ms ease-in-out;
      width: 217px;
      height: 56px;
+ }
+
+ .choose_us {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 2rem 0;
+     background-image: url(../assets/about/desktop/bg-quality.png);
+     background-size: cover;
+     background-position: center;
+     border-radius: 15px;
+     color: var(--light-cream);
+ }
+
+ .choose_us_par {
+     margin: 0 auto;
+     width: 50%;
+     padding: 0 2rem;
+ }
+
+ .quality,
+ .benefits,
+ .shipping {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 2rem 0;
+     background-color: var(--dark-cyan);
+     border-radius: 15px;
+     color: var(--light-cream);
+     width: 350px;
+     height: 382px;
  }
 
  ul {
