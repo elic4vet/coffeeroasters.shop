@@ -189,7 +189,10 @@
      margin: 0 auto;
      width: 50%;
      padding: 0 2rem;
+     margin-bottom: 2rem;
  }
+
+
 
  .quality,
  .benefits,
@@ -204,6 +207,25 @@
      color: var(--light-cream);
      width: 350px;
      height: 382px;
+ }
+
+ .step_one,
+ .step_two,
+ .step_three {
+     color: var(--pale-orange);
+     margin-bottom: 2rem;
+ }
+
+ .steps h2 {
+     font-size: 32px;
+     line-height: 36px;
+     margin-bottom: 1rem;
+     font-family: var(--first-ff);
+     width: 255px;
+ }
+
+ .steps {
+     width: 1042px;
  }
 
  ul {
@@ -224,4 +246,10 @@
      color: #fff;
      padding: 2rem 0;
      margin-top: 2rem;
+ }
+
+ .right_bean,
+ .left_bean {
+     width: 16.5px;
+     height: 16.5px;
  }
