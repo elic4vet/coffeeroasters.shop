@@ -71,11 +71,15 @@
      align-items: center;
      padding: 1rem 2rem;
      font-family: var(--second-ff);
+ 
+ }
+
+ .navbar a {
+     color: var(--grey);
+     font-weight: 700;
      font-size: 12px;
      line-height: 15px;
      letter-spacing: 0.92px;
-     color: var(--grey);
-     font-weight: 700;
  }
 
  .nav_menu {
