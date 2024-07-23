@@ -248,6 +248,16 @@
      margin-top: 2rem;
  }
 
+ footer a {
+     color: var(--grey);
+     margin-bottom: 1rem;
+     text-transform: uppercase;
+     font-size: 12px;
+     line-height: 15px;
+     letter-spacing: 0.92px;
+     font-weight: 700;
+ }
+
  .right_bean,
  .left_bean {
      width: 16.5px;
@@ -389,7 +399,7 @@
      margin-left: 100px;
  }
 
- .locations h4  {
+ .locations h4 {
      color: var(--dark-grey-blue);
      line-height: 36px;
      font-size: 24px;
