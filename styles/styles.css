@@ -71,7 +71,7 @@
      align-items: center;
      padding: 1rem 2rem;
      font-family: var(--second-ff);
- 
+
  }
 
  .navbar a {
@@ -408,4 +408,33 @@
      line-height: 36px;
      font-size: 24px;
      font-weight: 700;
+ }
+
+
+ /*Create your plan Page*/
+
+ .hero_plan {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 1280px;
+     height: 450px;
+     background-image: url(../assets/plan/desktop/image-hero-blackcup.jpg);
+     background-size: cover;
+     background-position: center;
+     border-radius: 15px;
+     color: #fff;
+     line-height: 1.5;
+     padding: 0 2rem;
+ }
+
+ .hero_content_plan {
+     display: flex;
+     flex-direction: column;
+     margin-left: 60px;
+ }
+
+ .hero_content_plan p {
+    margin-right: 730px;
  }
