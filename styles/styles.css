@@ -436,5 +436,18 @@
  }
 
  .hero_content_plan p {
-    margin-right: 730px;
+     margin-right: 730px;
+ }
+
+ .plan {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     background-image: url(../assets/plan/desktop/bg-steps.png);
+     background-size: cover;
+     background-position: center;
+     border-radius: 15px;
+     color: var(--light-cream);
+     width: 1280px;
+     height: 653px;
  }
