@@ -94,20 +94,24 @@
      flex-direction: column;
      justify-content: center;
      align-items: left;
-     height: 100vh;
+     width: 1364px;
+     margin-left: 25px;
+     margin-bottom: 80px;
+     height: 600px;
      background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
      background-size: cover;
      background-position: center;
      border-radius: 15px;
      color: #fff;
      line-height: 1.5;
-     padding: 0 2rem;
+
  }
 
  .hero_content {
      display: flex;
      flex-direction: column;
      margin-right: 800px;
+     padding-left: 60px;
  }
 
  .hero_content p {
@@ -138,7 +142,9 @@
      margin: 0 auto;
      padding: 0 2rem;
  }
-
+.collection {
+    margin-bottom: 100px;
+}
 
  .collection_title {
      width: 100%;
@@ -154,7 +160,7 @@
      font-size: 200px;
      margin-bottom: -80px;
  }
-
+ 
 
  .btn {
      display: inline-block;
@@ -164,7 +170,8 @@
      border-radius: 0.5rem;
      text-decoration: none;
      font-family: var(--first-ff);
-     font-size: 1.125rem;
+     font-size: 18px;
+     font-weight: 700;
      line-height: 1.5rem;
      color: var(--light-cream);
      cursor: pointer;
@@ -180,20 +187,35 @@
      justify-content: center;
      align-items: center;
      text-align: center;
-     padding: 2rem 0;
      background-image: url(../assets/about/desktop/bg-quality.png);
      background-size: cover;
      background-position: center;
      border-radius: 15px;
      color: var(--light-cream);
+     margin-bottom:250px;
+     height: 577px;
+      
  }
+
+    .choose_us h2 {
+        margin-top: 180px;
+    }
 
  .choose_us_par {
      margin: 0 auto;
      width: 50%;
-     padding: 0 2rem;
+     padding-right: 100px;
+     padding-left: 100px;
      margin-bottom: 2rem;
+     line-height: 26px;
+     font-size: 16px;
  }
+
+ .our_benefits  
+    {
+ position: relative;
+ top : 50px;
+    }
 
  .quality,
  .benefits,
