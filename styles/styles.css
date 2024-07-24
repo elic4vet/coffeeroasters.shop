@@ -21,7 +21,7 @@
 
  body {
      display: flex;
-     background-color: var(--white);
+     background-color: var(--light-cream) ; 
      font-family: var(--second-ff);
  }
 
