@@ -21,7 +21,7 @@
 
  body {
      display: flex;
-     background-color: var(--light-cream) ; 
+     background-color: var(--light-cream);
      font-family: var(--second-ff);
  }
 
@@ -142,9 +142,10 @@
      margin: 0 auto;
      padding: 0 2rem;
  }
-.collection {
-    margin-bottom: 100px;
-}
+
+ .collection {
+     margin-bottom: 100px;
+ }
 
  .collection_title {
      width: 100%;
@@ -160,7 +161,7 @@
      font-size: 200px;
      margin-bottom: -80px;
  }
- 
+
 
  .btn {
      display: inline-block;
@@ -192,14 +193,14 @@
      background-position: center;
      border-radius: 15px;
      color: var(--light-cream);
-     margin-bottom:250px;
+     margin-bottom: 250px;
      height: 577px;
-      
+
  }
 
-    .choose_us h2 {
-        margin-top: 180px;
-    }
+ .choose_us h2 {
+     margin-top: 180px;
+ }
 
  .choose_us_par {
      margin: 0 auto;
@@ -211,11 +212,10 @@
      font-size: 16px;
  }
 
- .our_benefits  
-    {
- position: relative;
- top : 50px;
-    }
+ .our_benefits {
+     position: relative;
+     top: 50px;
+ }
 
  .quality,
  .benefits,
@@ -472,6 +472,62 @@
      background-size: cover;
      background-position: center;
      color: var(--light-cream);
+     margin-top: 100px;
+     height: 450px;
+ }
+
+ .plan h1 {
+    color: var(--pale-orange);
+
+ }
+ .plan_item {
+     display: flex;
+     flex-direction: column;
+     border-radius: 15px;
+     color: var(--light-cream);
+     width: 285px;
+     height: 355px;
+     line-height: 26px;
+ }
+
+ .options li {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     border-radius: 15px;
+     background-color: #F4F1EB;
+     color: var(--dark-grey-blue);
+     width: 228px;
+     height: 250px;
+     padding-left: 40px;
+     padding-right: 40px;
+ }
+
+ .left-content {
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     font-size: 16px;
+     line-height: 26px;
+     width: 255px;
+     height: 356px;
+     margin-top: 40px;
+     margin-right: 100px;
+ }
+
+ .right-content {
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     font-size: 16px;
+     line-height: 26px;
+ }
+
+ .preferences {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
      width: 1280px;
      height: 450px;
      margin-top: 100px;
