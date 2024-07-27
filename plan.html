@@ -25,8 +25,7 @@
         <div class="hero_content_plan">
           <h1>Create a plan</h1>
           <p>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees
-            from
-            around the globe delivered fresh to your door.</p>
+            from around the globe delivered fresh to your door.</p>
         </div>
       </div>
 
@@ -82,90 +81,92 @@
               <p>Dense and finely ground beans for an intense, flavorful experience</p>
             </li>
           </ul>
-        </div>
-      </section>
 
-      <section class="questions">
-        <h3>What type of coffee?</h3>
-        <div class="option">
-          <h4>Single origin</h4>
-          <p>Distinct, high quality coffee from a specific family-owned farm</p>
-        </div>
-        <div class="option">
-          <h4>Decaf</h4>
-          <p>Just like regular coffee, except the caffeine has been removed</p>
-        </div>
-        <div class="option">
-          <h4>Blended</h4>
-          <p>Combination of two or three dark roasted beans of organic coffees</p>
-        </div>
-      </section>
+          <h2>What type of coffee?</h2>
+          <ul class="options">
+            <li>
+              <h4>Single origin</h4>
+              <p>Distinct, high quality coffee from a specific family-owned farm</p>
+            </li>
+            <li>
+              <h4>Decaf</h4>
+              <p>Just like regular coffee, except the caffeine has been removed</p>
+            </li>
+            <li>
+              <h4>Blended</h4>
+              <p>Combination of two or three dark roasted beans of organic coffees</p>
+            </li>
+          </ul>
 
-      <section class="questions">
-        <h3>How much would you like?</h3>
-        <div class="option">
-          <h4>250g</h4>
-          <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
-        </div>
-        <div class="option">
-          <h4>500g</h4>
-          <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
-        </div>
-        <div class="option">
-          <h4>1000g</h4>
-          <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
-        </div>
-      </section>
+          <h2>How much would you like?</h2>
+          <ul class="options">
+            <li>
+              <h4>250g</h4>
+              <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+            </li>
+            <li>
+              <h4>500g</h4>
+              <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
+            </li>
+            <li>
+              <h4>1000g</h4>
+              <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+            </li>
+          </ul>
 
-      <section class="questions">
-        <h3>Want us to grind them?</h3>
-        <div class="option">
-          <h4>Wholebean</h4>
-          <p>Best choice if you cherish the full sensory experience</p>
-        </div>
-        <div class="option">
-          <h4>Filter</h4>
-          <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
-        </div>
-        <div class="option">
-          <h4>Cafetiére</h4>
-          <p>Coarse ground beans specially suited for French press coffee</p>
-        </div>
-      </section>
+          <h2>Want us to grind them?</h2>
+          <ul class="options">
+            <li>
+              <h4>Wholebean</h4>
+              <p>Best choice if you cherish the full sensory experience</p>
+            </li>
+            <li>
+              <h4>Filter</h4>
+              <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
+            </li>
+            <li>
+              <h4>Cafetiére</h4>
+              <p>Coarse ground beans specially suited for French press coffee</p>
+            </li>
+          </ul>
 
-      <section class="questions">
-        <h3>How often should we deliver?</h3>
-        <div class="option">
-          <h4>Every week</h4>
-          <p>$14.00 per shipment. Includes free first-class shipping.</p>
-        </div>
-        <div class="option">
-          <h4>Every 2 weeks</h4>
-          <p>$17.25 per shipment. Includes free priority shipping.</p>
-        </div>
-        <div class="option">
-          <h4>Every month</h4>
-          <p>$22.50 per shipment. Includes free priority shipping.</p>
-        </div>
-      </section>
-
-      <section class="order_summary">
+          <h2>How often should we deliver?</h2>
+          <ul class="options">
+            <li>
+              <h4>Every week</h4>
+              <p>$14.00 per shipment. Includes free first-class shipping.</p>
+            </li>
+            <li>
+              <h4>Every 2 weeks</h4>
+              <p>$17.25 per shipment. Includes free priority shipping.</p>
+            </li>
+            <li>
+              <h4>Every month</h4>
+              <p>$22.50 per shipment. Includes free priority shipping.</p>
+            </li>
+          </ul>
+ 
+      <div class="summary">
         <h3>Order Summary</h3>
-        <p>“I drink coffee _____, with a _____ type of bean. _____ ground ala _____, sent to me _____.”</p>
-        <button class="btn">Create my plan!</button>
-      </section>
+        <p>“I drink my coffee <span id="option1">_____</span>, with a <span id="option2">_____</span> type of bean. <br>
+          <span id="option3"></span> ground ala <span id="option4">_____</span>, sent to me <span id="option5">_____</span>.”</p>
+      </div>
+      <button class="submit btn">Create my plan!</button>
+  
+    </div>
+  </section>
 
       <!-- Modal -->
       <div class="modal">
         <h3>Order Summary</h3>
-        <p>“I drink coffee _____, with a _____ type of bean. _____ ground ala _____, sent to me _____.”</p>
+        <p>“I drink coffee as <span id="option1"></span>, with a type of bean. _____ ground ala _____, sent to me
+          _____.”</p>
         <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription
           discount codes can also be redeemed at the checkout.</p>
         <p>$_____/month</p>
         <button class="btn">Checkout</button>
       </div>
       <!-- End modal -->
-
     </main>
 
     <footer>
