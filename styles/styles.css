@@ -558,7 +558,7 @@
      padding: 20px 20px;
      width: 580px;
      margin-bottom: 20px;
-    }
+ }
 
  .summary h3 {
      font-family: var(--second-ff);
@@ -567,7 +567,7 @@
      line-height: 26px;
      font-weight: 200;
      margin-right: 280px;
-    }
+ }
 
  .summary span {
      color: var(--dark-cyan);
@@ -578,6 +578,13 @@
  }
 
  .submit {
-    margin-left: 360px;
-}
- 
+     margin-left: 360px;
+ }
+
+
+ .icon-arrow {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 700px;
+ }
