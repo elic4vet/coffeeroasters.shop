@@ -9,6 +9,8 @@
      /* Color Palette */
 
      --dark-cyan: #0E8784;
+     --color-selected: #0E8784;
+     --color-selected-text: #FEFCF7;
      --dark-grey-blue: #333D4B;
      --grey: #83888F;
      --light-cream: #FEFCF7;
@@ -511,8 +513,8 @@
  }
 
  .left-content {
-    display: flex ;
-    flex-direction: column;
+     display: flex;
+     flex-direction: column;
      align-items: left;
      font-size: 16px;
      line-height: 26px;
@@ -604,21 +606,30 @@
  .arrow img:hover {
      cursor: pointer;
  }
- 
+
  .menu {
-    display: none; 
-}
+     display: none;
+ }
 
 
-.menu.hidden {
-    display: none;  
-}
+ .menu.hidden {
+     display: none;
+ }
 
-.menu:not(.hidden) {
-    display: flex;  
+ .menu:not(.hidden) {
+     display: flex;
 
-}
+ }
 
-.options {
-    margin-bottom: 30px;
-}
+ .options {
+     margin-bottom: 30px;
+ }
+
+ .menu_items:hover {
+     cursor: pointer;
+ }
+
+.selected {
+     background-color: var(--dark-cyan);
+     color: var(--light-cream);
+ }
