@@ -73,7 +73,6 @@
      align-items: center;
      padding: 1rem 2rem;
      font-family: var(--second-ff);
-
  }
 
  .navbar a {
@@ -106,7 +105,6 @@
      border-radius: 15px;
      color: #fff;
      line-height: 1.5;
-
  }
 
  .hero_content {
@@ -130,7 +128,6 @@
  }
 
  .hero_img {
-
      border-radius: 15px;
  }
 
@@ -164,7 +161,6 @@
      margin-bottom: -80px;
  }
 
-
  .btn {
      display: inline-block;
      padding: 1rem 2rem;
@@ -197,7 +193,6 @@
      color: var(--light-cream);
      margin-bottom: 250px;
      height: 577px;
-
  }
 
  .choose_us h2 {
@@ -295,7 +290,6 @@
  }
 
  /*About us Page*/
-
  .about_hero {
      display: flex;
      flex-direction: column;
@@ -371,13 +365,11 @@
      border-radius: 15px;
      background-repeat: no-repeat;
      color: var(--light-cream);
-
  }
 
  .our_quality h2 {
      margin-right: 50px;
  }
-
 
  .our_quality_content {
      display: flex;
@@ -436,9 +428,7 @@
      font-weight: 700;
  }
 
-
  /*Create your plan Page*/
-
  .hero_plan {
      display: flex;
      flex-direction: column;
@@ -468,7 +458,6 @@
      font-weight: 200;
  }
 
-
  .plan {
      display: flex;
      flex-direction: row;
@@ -488,7 +477,6 @@
 
  .plan h1 {
      color: var(--pale-orange);
-
  }
 
  .plan_item {
@@ -588,7 +576,6 @@
      margin-left: 360px;
  }
 
-
  .arrow {
      display: flex;
      justify-content: center;
@@ -614,14 +601,12 @@
      display: none;
  }
 
-
  .menu.hidden {
      display: none;
  }
 
  .menu:not(.hidden) {
      display: flex;
-
  }
 
  .options {
