@@ -617,7 +617,7 @@
      cursor: pointer;
  }
 
-.selected {
-     background-color: var(--dark-cyan);
-     color: var(--light-cream);
- }
+ .selected {
+    background-color: var(--dark-cyan);
+    color: var(--light-cream);
+}
