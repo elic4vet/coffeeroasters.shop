@@ -1,5 +1,7 @@
 let arrows = document.querySelectorAll('.arrow');
 let menu = document.querySelectorAll('.menu');
+let selectedColor = '#0E8784';
+let selectedTextColor = 'white';
 
 function rotateArrowUp(event) {
     let arrow = event.target;
@@ -37,16 +39,18 @@ arrows.forEach(arrow => {
     arrow.addEventListener('click', rotateArrowUp);
 });
 
-
- 
 function changeSelectedMenu(event) {
-    let menu = event.target;
-    menu.style.backgroundColor = 'var(--color-selected)';
-    menu.style.color = 'var(--color-selected-text)';
+    let menuItem = event.target.closest('.menu_items');
+    if (menuItem) {
+        document.querySelectorAll('.menu_item').forEach(item => {
+            item.style.backgroundColor = ''; 
+            item.style.color = ''; 
+        });
+        menuItem.style.backgroundColor = selectedColor;
+        menuItem.style.color = selectedTextColor;
+    }
 }
 
-menu.forEach(menu => { 
-    menu.addEventListener('click', changeSelectedMenu);
+document.querySelectorAll('.menu_items').forEach(item => {
+    item.addEventListener('click', changeSelectedMenu);
 });
-
-
