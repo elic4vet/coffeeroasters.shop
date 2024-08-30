@@ -1,7 +1,21 @@
 let arrows = document.querySelectorAll('.arrow');
 let menu = document.querySelectorAll('.menu');
-let selectedColor = '#0E8784';
-let selectedTextColor = 'white';
+let option1 = document.getElementById('option1');
+let option2 = document.getElementById('option2');
+let option3 = document.getElementById('option3');
+let option4 = document.getElementById('option4');
+let option5 = document.getElementById('option5');
+
+let selectedOptions = {
+    drinkType: '',
+    coffeeType: '',
+    quantity: '',
+    grind: '',
+    delivery: ''
+};
+
+const selectedColor = 'var(--dark-cyan)';
+const selectedTextColor = 'var(--light-cream)';
 
 function rotateArrowUp(event) {
     let arrow = event.target;
@@ -42,15 +56,78 @@ arrows.forEach(arrow => {
 function changeSelectedMenu(event) {
     let menuItem = event.target.closest('.menu_items');
     if (menuItem) {
-        document.querySelectorAll('.menu_item').forEach(item => {
-            item.style.backgroundColor = ''; 
-            item.style.color = ''; 
-        });
-        menuItem.style.backgroundColor = selectedColor;
-        menuItem.style.color = selectedTextColor;
+        if (menuItem.classList.contains('selected')) {
+            // If the item is already selected, deselect it
+            menuItem.style.backgroundColor = '';
+            menuItem.style.color = '';
+            menuItem.classList.remove('selected');
+        } else {
+            // Deselect all other items
+            document.querySelectorAll('.menu_items').forEach(item => {
+                if (item !== menuItem) {
+                    item.style.backgroundColor = '';
+                    item.style.color = '';
+                    item.classList.remove('selected');
+                }
+            });
+
+            // Select the clicked item
+            menuItem.style.backgroundColor = selectedColor;
+            menuItem.style.color = selectedTextColor;
+            menuItem.classList.add('selected');
+        }
     }
 }
 
 document.querySelectorAll('.menu_items').forEach(item => {
     item.addEventListener('click', changeSelectedMenu);
 });
+
+  /* function updateSummary() { 
+    document.getElementById('option1').textContent = selectedOptions.drinkType ||  '_____';
+    document.getElementById('option2').textContent = selectedOptions.coffeeType || '_____';
+    document.getElementById('option3').textContent = selectedOptions.quantity || '_____';
+    document.getElementById('option4').textContent = selectedOptions.grind || '_____';
+    document.getElementById('option5').textContent = selectedOptions.delivery || '_____';
+  }
+  
+  document.querySelectorAll('.menu_items').forEach(item => {
+    item.addEventListener('click', changeSelectedMenu);
+  });
+
+    // Update the summary when a menu item is selected
+    updateSummary();
+
+    // Reset the selected options when the reset button is clicked
+    document.getElementById('reset').addEventListener('click', () => {
+        selectedOptions = {};
+        updateSummary();
+    });
+
+    // Show the order summary when the order button is clicked
+
+    document.getElementById('order').addEventListener('click', () => {
+        let summary = document.getElementById('summary');
+        summary.classList.remove('hidden');
+    });
+
+    // Hide the order summary when the close button is clicked
+    document.getElementById('close').addEventListener('click', () => {
+        let summary = document.getElementById('summary');
+        summary.classList.add('hidden');
+    });
+
+    // Update the selected options when a menu item is selected
+
+    document.querySelectorAll('.menu_items').forEach(item => {
+        item.addEventListener('click', event => {
+            let menuItem = event.target.closest('.menu_items');
+            let menu = menuItem.closest('.menu');
+            let menuTitle = menu.previousElementSibling.textContent;
+            let selectedOption = menuItem.textContent;
+            selectedOptions[menuTitle] = selectedOption;
+            updateSummary();
+        });
+    }); */ 
+
+ 
