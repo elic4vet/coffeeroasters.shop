@@ -617,7 +617,7 @@
      cursor: pointer;
  }
 
- .selected {
+ .menu_item.selected{
     background-color: var(--dark-cyan);
     color: var(--light-cream);
 }
